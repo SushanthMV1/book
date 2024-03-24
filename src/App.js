@@ -1,31 +1,12 @@
 import Hero from "./Hero";
+import Navbar from "./Navbar";
+import Suggestions from "./suggestions";
 
 function App() {
   return (
     <div className="App">
       <header>
-        {/* Navigation bar */}
-        <nav id="navbar">
-          {/* Logo */}
-          <div className="logo">
-            <a href="#Hero">Insert Logo</a>
-          </div>
-
-          {/* Search Bar */}
-          <div className="searchBar">
-            <input type="text" id="searchBar" />
-            <input type="submit" id="submit" value={""} />
-          </div>
-          {/* Recommended */}
-          <a href="#suggestionsSection" id="recommended">
-            Recommended
-          </a>
-
-          {/* Accounts */}
-          <a href="" id="accounts">
-            Accounts
-          </a>
-        </nav>
+        <Navbar />
       </header>
 
       {/* Hero */}
@@ -34,24 +15,13 @@ function App() {
       {/* Suggestions */}
       <div id="suggestionsSection">
         {/* BestSellers */}
-        <div className="suggestions" id="bestSellers">
-          <div className="suggestionHeading">Best Sellers</div>
-          <div className="suggestionsScrollBar">
-            <div className="suggestionCard"></div>
-          </div>
-        </div>
+        <Suggestions title="Best Sellers" />
 
         {/* Recommendations */}
-        <div className="suggestions" id="recommendations">
-          <div className="suggestionHeading">Recommendations</div>
-          <div className="suggestionsScrollBar"></div>
-        </div>
+        <Suggestions title="Recommendations" />
 
         {/* Latest Offerings */}
-        <div className="suggestions" id="latestOfferings">
-          <div className="suggestionHeading">Latest Offerings</div>
-          <div className="suggestionsScrollBar"></div>
-        </div>
+        <Suggestions title="Latest Offerings" />
       </div>
 
       {/* Review Scetion */}
