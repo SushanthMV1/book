@@ -1,8 +1,23 @@
+import { useState } from "react";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Suggestions from "./suggestions";
 
 function App() {
+  // Fetching the books data from json
+  const [books, setBooks] = useState(null);
+
+  useEffect(() => {
+    fetch()
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setBooks(data);
+      });
+  }, []);
+
+  //Returing HTML
   return (
     <div className="App">
       <header>
@@ -15,13 +30,13 @@ function App() {
       {/* Suggestions */}
       <div id="suggestionsSection">
         {/* BestSellers */}
-        <Suggestions title="Best Sellers" />
+        <Suggestions title="Best Sellers" books={books} />
 
         {/* Recommendations */}
-        <Suggestions title="Recommendations" />
+        <Suggestions title="Recommendations" books={books} />
 
         {/* Latest Offerings */}
-        <Suggestions title="Latest Offerings" />
+        <Suggestions title="Latest Offerings" books={books} />
       </div>
 
       {/* Review Scetion */}
