@@ -1,0 +1,31 @@
+{
+  "books": [
+    {
+      "image": "/Assets/harryPotter.jpg",
+      "Title": "Harry Potter",
+      "author": "J. K. Rowling",
+      "price": "1800",
+      "description": "jksehvkjdsnvl",
+      "category": "Fiction",
+      "id": "1"
+    },
+    {
+      "image": "/Assets/prideAndPrejudice.jpg",
+      "Title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": "1600",
+      "description": "jksehvkjdsnvl",
+      "category": "Fiction",
+      "id": "2"
+    },
+    {
+      "image": "/Assets/toKillAMockingbird.jpg",
+      "Title": "To Kill A Mockingbird",
+      "author": "Harper Lee",
+      "price": "1700",
+      "description": "jksehvkjdsnvl",
+      "category": "Fiction",
+      "id": "3"
+    }
+  ]
+}

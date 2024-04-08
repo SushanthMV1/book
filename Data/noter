@@ -1,13 +1,4 @@
 {
-  "books": [
-    {
-      "Title": "dsoigigji",
-      "author": "hewuiukew",
-      "price": "300",
-      "description": "jksehvkjdsnvl",
-      "category": "dhgfhjwk"
-    },
-    {
       "Title": "dsoigigji",
       "author": "hewuiukew",
       "price": "300",
@@ -28,5 +19,3 @@
       "description": "jksehvkjdsnvl",
       "category": "dhgfhjwk"
     }
-  ]
-}

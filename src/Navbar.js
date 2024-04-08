@@ -3,25 +3,40 @@ const Navbar = () => {
     <div id="Navbar">
       <nav id="navbar">
         {/* Logo */}
-        <div className="logo">
-          <a href="#Hero">Insert Logo</a>
+        <div id="logo">
+          <img src="/Assets/LiteraryLane.png" height="100%" />
         </div>
 
         {/* Search Bar */}
-        <div className="searchBar">
-          <input type="text" id="searchBar" />
-          <input type="submit" id="submit" value={""} />
+        <div id="searchBar">
+          <input type="text" id="searchInput" />
+          <button id="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
+
         {/* Recommended */}
         <a href="#suggestionsSection" id="recommended">
-          Recommended
+          RECOMMENDED
+        </a>
+
+        {/* Add to Cart */}
+        <a href="" id="addToCart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Add to Cart</p>
         </a>
 
         {/* Accounts */}
-        <a href="" id="accounts">
-          Accounts
+        <a href="">
+          <i class="fa-solid fa-user" id="accounts"></i>
         </a>
       </nav>
+
+      {/* Scroll Progress */}
+      <div id="scrollProgress">
+        <div id="scrollProgress1"></div>
+        <div id="scrollProgress2"></div>
+      </div>
     </div>
   );
 };
