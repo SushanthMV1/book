@@ -25,9 +25,9 @@ const Hero = () => {
 
         <Slider className="carouselContent">
           <Slide index={0}>
-            <div id="slide1">
-              <div id="slide1Left">
-                <h1 id="slide1Title">
+            <div className="slide" id="slide1">
+              <div className="slideLeft">
+                <h1 className="slideTitle">
                   You can choose your favourite books here.
                 </h1>
                 <p>
@@ -35,19 +35,51 @@ const Hero = () => {
                 </p>
                 <button>Sign Up</button>
               </div>
-              <div id="slide1Right">
-                <div id="slideImgShadow"></div>
-                <div id="slideImg">
+              <div className="slideRight">
+                <div className="slideImgShadow"></div>
+                <div className="slideImg">
                   <img src="Assets/HeroImg.png" />
                 </div>
               </div>
             </div>
           </Slide>
           <Slide index={1}>
-            <h2>Slide 2</h2>
+            <div className="slide" id="slide2">
+              <div className="slideLeft" id="slide2Left">
+                <h1 className="slideTitle" id="slide2Title">
+                  Have the entire Harry Potter Collection.
+                </h1>
+                <p>
+                  Sign up to get some additional discounts on products you love
+                </p>
+                <button>Order Now</button>
+              </div>
+              <div className="slideRight">
+                <div className="slideImgShadow" id="slide2ImgShadow"></div>
+                <div className="slideImg">
+                  <img src="Assets/HeroImg2.png" />
+                </div>
+              </div>
+            </div>
           </Slide>
           <Slide index={2}>
-            <h2>Slide 3</h2>
+            <div className="slide" id="slide3">
+              <div className="slideLeft">
+                <h1 className="slideTitle">
+                  You can choose your favourite books here.
+                </h1>
+                <p>
+                  Sign up to get some additional discounts on products you love
+                </p>
+                <button>Sign Up</button>
+              </div>
+              <div className="slideRight">
+                <div className="slideImgShadow"></div>
+                <div className="slideImg">
+                  <img src="Assets/HeroImg.png" />
+                </div>
+              </div>
+            </div>
           </Slide>
         </Slider>
 

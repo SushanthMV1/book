@@ -1,25 +1,25 @@
 [
   {
     "name": "Lara Johansen",
-    "image": "Assets/reviewImage.jpeg",
+    "image": "Assets/reviewImage.png",
     "rating": "4.2 / 5.0",
     "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est eos vero explicabo velit numquam aperiam recusandae consequuntur?"
   },
   {
     "name": "Lara Johansen",
-    "image": "Assets/reviewImage.jpeg",
+    "image": "Assets/reviewImage.png",
     "rating": "4.2 / 5.0",
     "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id estn eos vero explicabo velit numquam aperiam recusandae consequuntur?"
   },
   {
     "name": "Lara Johansen",
-    "image": "Assets/reviewImage.jpeg",
+    "image": "Assets/reviewImage.png",
     "rating": "4.2 / 5.0",
     "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id esteos vero explicabo velit numquam aperiam recusandae consequuntur?"
   },
   {
     "name": "Lara Johansen",
-    "image": "Assets/reviewImage.jpeg",
+    "image": "Assets/reviewImage.png",
     "rating": "4.2 / 5.0",
     "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est eos vero explicabo velit numquam aperiam recusandae consequuntur?"
   }

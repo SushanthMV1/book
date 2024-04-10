@@ -42,14 +42,14 @@ const Footer = () => {
             <div class="footerSubTitle">Site Map</div>
 
             <div class="linksList">
-              <a href="#navbar" class="navlink">
+              <a href="#top" class="footerLink">
                 Home
               </a>
-              <a href="#about" class="navlink">
-                About
+              <a href="#suggestionsSection" class="footerLink">
+                Recommended
               </a>
-              <a href="#projects" class="navlink">
-                My Projects
+              <a href="#reviewRead" class="footerLink">
+                Reviews
               </a>
             </div>
           </div>
