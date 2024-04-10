@@ -4,7 +4,9 @@ const Navbar = () => {
       <nav id="navbar">
         {/* Logo */}
         <div id="logo">
-          <img src="/Assets/LiteraryLane.png" height="100%" />
+          <a href="./App.js">
+            <img src="/Assets/LiteraryLane.png" height="100%" />
+          </a>
         </div>
 
         {/* Search Bar */}
@@ -21,9 +23,9 @@ const Navbar = () => {
         </a>
 
         {/* Add to Cart */}
-        <a href="" id="addToCart">
+        <a href="./cart.js" id="addToCart">
           <i class="fa-solid fa-cart-shopping"></i>
-          <p>Add to Cart</p>
+          Cart
         </a>
 
         {/* Accounts */}

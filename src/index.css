@@ -36,7 +36,7 @@ body {
   left: 0vh;
   width: 100%;
   box-shadow: none;
-  z-index: 1;
+  z-index: 10;
 }
 
 nav {
@@ -93,13 +93,8 @@ nav a {
   cursor: pointer;
 }
 
-#addtoCart {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 #addToCart i {
-  font-size: 3vh;
+  font-size: 4vh;
 }
 
 #accounts {
@@ -169,6 +164,96 @@ nav a {
   right: 6vh;
 }
 
+#slide1 {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 6vh 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+#slide1Left {
+  color: #feffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+#slide1Title {
+  text-shadow: 0.3rem 0.3rem #4f6f52;
+  font-size: 2.7rem;
+  margin-bottom: 1.5rem;
+}
+
+#slide1Left p {
+  font-size: 1.2rem;
+}
+
+#slide1Left button {
+  font-size: 0.9rem;
+  background-color: #4f6f52;
+  color: #feffff;
+  width: 6rem;
+  height: 4vh;
+  border-radius: 2vh;
+  border: none;
+  padding: 0.5vh 1rem;
+  margin-top: 0.5rem;
+  box-shadow: 0rem 0.3rem 0rem #17252a;
+}
+
+#slide1Left button:hover {
+  cursor: pointer;
+}
+
+#slide1Left button:active {
+  transform: translateY(0.15rem);
+  box-shadow: 0rem 0.15rem 0rem #17252a;
+}
+
+#slide1Right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slideImgShadow {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background-color: #4f6f52;
+  z-index: 1;
+}
+#slideImg {
+  z-index: 2;
+  position: absolute;
+  right: 10rem;
+  top: 14vh;
+}
+
+#slideImg img {
+  height: 60vh;
+}
+
+#slideImg:hover {
+  animation-name: SlideImg;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes SlideImg {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-5rem);
+  }
+}
 /* Suggestions */
 #suggestionsSection {
   width: 100%;
@@ -179,21 +264,22 @@ nav a {
 
 .suggestions {
   width: 90%;
-  padding: 3vh 5%;
-  height: 70vh;
+  padding: 3vh 5% 8vh;
+  height: 80vh;
   background-color: #f5f5f5;
 }
 
 .suggestionHeading {
-  width: 100%;
-  margin-bottom: 2vh;
+  color: #4f6f52;
   font-size: 5vh;
   font-weight: 600;
-  text-align: center;
+  width: 100%;
+  border-bottom: solid 2px #4f6f52;
+  margin-bottom: 5vh;
 }
 
 .suggestionsScrollBar {
-  height: 63vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -201,18 +287,67 @@ nav a {
 }
 
 .suggestionCard {
-  width: 18rem;
-  height: 23rem;
-  padding: 2rem;
+  width: 20vw;
+  height: 70vh;
+  padding: 2vh;
+  box-sizing: border-box;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  box-shadow: 0.3rem 0.3rem 0.3rem #86a789;
 }
 
 .suggestionImg {
-  width: 50%;
+  width: 100%;
+  height: 40vh;
 }
+
+.suggestionCard h2 {
+  margin-top: 0.5vh;
+}
+
+.suggestionCard p {
+  font-size: 1.8vh;
+}
+
+.suggestionCardBottom {
+  color: #4f6f52;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.bookPriceTitle {
+  font-weight: 700;
+  font-size: 3vh;
+  height: 3vh;
+}
+
+.price {
+  font-size: 2vh;
+}
+
+.suggestionCard button {
+  color: #f1f1f1;
+  font-weight: 700;
+  background-color: #86a789;
+  height: 5vh;
+  width: 8vw;
+  border: none;
+  border-radius: 3vh;
+  box-shadow: 0rem 0.3rem 0rem #4f6f52;
+}
+
+.suggestionCard button:hover {
+  cursor: pointer;
+}
+
+.suggestionCard button:active {
+  box-shadow: 0rem 0.15rem 0rem #4f6f52;
+  transform: translateY(0.15rem);
+}
+
 /* Review Section */
 #reviewSection {
   width: 90%;
@@ -237,20 +372,57 @@ nav a {
   border-radius: 3rem;
   display: flex;
   flex-flow: column;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .reviewTop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  border-bottom: 2px solid #17252a;
+  box-sizing: border-box;
+}
+
+.reviewImg {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #4f6f52;
+}
+
+.reviewImg img {
+  width: 100%;
+}
+
+.reviewTopContent {
+  width: 60%;
+}
+
+.reviewName {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .reviewBottom {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 60%;
 }
 
+.reviewText {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.reviewSymbol {
+  height: 20%;
+  font-size: 4rem;
+  color: #4f6f52;
+}
 /* Bact to top */
 @keyframes backToTop {
   from {
@@ -275,10 +447,100 @@ nav a {
   right: 1.25rem;
   position: fixed;
   opacity: 0.7;
+  color: #17252a;
 }
 
 #backToTop:hover {
   animation-name: backToTop;
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+/* Footer */
+/* Footer */
+footer {
+  height: 300px;
+  background-color: #17252a;
+  color: #feffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  padding: 6vh 5%;
+}
+
+.footerSubTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+}
+
+/* Contact form */
+.contact {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  color: #feffff;
+}
+
+.contactElement {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+}
+
+footer label {
+  font-size: 0.8rem;
+}
+
+.contactInput {
+  width: 100%;
+}
+
+.contactButton {
+  margin-top: 0.5rem;
+  width: 6rem;
+  height: 2rem;
+  color: #feffff;
+  font-weight: 500;
+  background-color: #3aafa9;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0rem 0.3rem #2b7a78;
+}
+
+.contactButton:hover {
+  cursor: pointer;
+}
+
+.contactButton:active {
+  box-shadow: 0rem 0.15rem #2b7a78;
+  transform: translateY(0.15rem);
+}
+
+/* Footer Right */
+.footerRight {
+  width: 30%;
+}
+
+/* Quick Links */
+
+.linksList {
+  margin: 0.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Social Media */
+.socialMedia {
+  margin-top: 1.5rem;
+}
+
+.socialMediaLink {
+  color: #feffff;
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.25rem;
 }

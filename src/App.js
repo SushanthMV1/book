@@ -4,13 +4,17 @@ import Navbar from "./Navbar";
 import data from "./DB/books.json";
 import Reviews from "./Reviews";
 import SuggestionFrame from "./SuggestionFrame";
+import Footer from "./Footer";
+import Data from "./DB/reviews.json";
 
 function App() {
   // Fetching the books data from json
   const [books, setBooks] = useState(null);
+  const [reviews, setReviews] = useState(null);
   useEffect(() => {
     console.log(data);
     setBooks(data.books);
+    setReviews(Data);
   });
 
   //Scrolling Effects
@@ -66,9 +70,9 @@ function App() {
         {/* Reading Reviews */}
         <div id="reviewRead">
           <div id="reviewReadHeading" className="suggestionHeading">
-            Testimonials
+            Reviews
           </div>
-          <Reviews />
+          {reviews && <Reviews reviews={reviews} />}
         </div>
 
         {/* Writing Reviews */}
@@ -81,6 +85,9 @@ function App() {
       <a href="#top" id="backToTop">
         <i className="fa-solid fa-angle-up"></i>
       </a>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
